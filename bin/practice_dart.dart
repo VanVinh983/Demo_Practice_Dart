@@ -7,6 +7,10 @@ void main(List<String> arguments) {
       "Tên: ${student._hoVaTen} - Giới tính: ${student._gioiTinh} - Tuổi: ${student._tuoi}");
   // khai báo hàm tinhTong có trong class Student
   print("${student.tinhTong()}");
+<<<<<<< HEAD
+=======
+
+>>>>>>> fee39c1 (vanvinh fixed 2)
   // khai báo hàm variable
   variable();
   // khai báo hàm vongLap
