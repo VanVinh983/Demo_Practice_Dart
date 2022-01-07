@@ -11,7 +11,10 @@ void main(List<String> arguments) {
   variable();
   // khai báo hàm vongLap
   vongLap();
-
+  // khai báo hàm cở bản
+  hamCoBan(100, 3, 4);
+  // hàm closure
+  congChuoi("Trung", "Trần");
 }
 
 // hàm khai báo biến
@@ -20,8 +23,9 @@ void variable() {
   var a = "Tôi là người mới";
   //a = 10; // do biến var khai báo giá trị đầu tiên theo kiêu String
 
-  dynamic b =
-      "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
+
+  dynamic b ="Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
+
   b = 10;
   int c = 10;
   print("${a}");
@@ -31,6 +35,14 @@ void variable() {
   final List<int> list = [1, 2, 3, 4, 5];
   list.add(6);
   print(list.toList());
+
+  const List<int> list2 = [
+    0,
+    1,
+    23,
+    4
+  ]; // giá trị của biến với từ khóa const là giá trị cố định. Không thể thay đổi giá trị của biến có từ khóa là const.
+}
 
 // khai báo 1 đối tượng
 class Student {
@@ -88,3 +100,24 @@ void vongLap() {
     }
   }
 }
+
+// hàm cơ bản
+void hamCoBan(var a, var b, var c){
+  var sum = a + b + c;
+  print("${sum}");
+
+  // optional named parameters
+  void add (var s1, var s2, {bool s3 = true, int s4 = 10}){
+
+  }
+}
+
+dynamic congChuoi(String s1, String s2, [String? s3]){
+    if (s3 != null) {
+      var fullName = s1 + s2 + s3;
+      print( "${fullName}");
+    } else {
+      var name = s1 + s2;
+      print( "${name}");
+    }
+  }
