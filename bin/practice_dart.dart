@@ -6,6 +6,7 @@ void main(List<String> arguments) {
   print("Tên: ${student._hoVaTen} - Giới tính: ${student._gioiTinh} - Tuổi: ${student._tuoi}");
   // khai báo hàm tinhTong có trong class Student
   print("${student.tinhTong()}");
+<<<<<<< HEAD
 
   // khai báo hàm variable
   variable();
@@ -30,6 +31,14 @@ void variable() {
   const List<int> list2 = [0, 1, 23, 4]; // giá trị của biến với từ khóa const là giá trị cố định. Không thể thay đổi giá trị của biến có từ khóa là const.
 }
 
+=======
+ 
+ 
+}
+
+
+
+>>>>>>> 9606f6dd5e43f08be062907b7efe51640ccf768b
 // khai báo 1 đối tượng
 class Student {
   String _hoVaTen;
