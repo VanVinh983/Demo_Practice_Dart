@@ -23,9 +23,7 @@ void variable() {
   var a = "Tôi là người mới";
   //a = 10; // do biến var khai báo giá trị đầu tiên theo kiêu String
 
-  dynamic b =
-      "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
-
+  dynamic b ="Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
   b = 10;
   int c = 10;
   print("${a}");
