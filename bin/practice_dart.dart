@@ -13,16 +13,16 @@ void main(List<String> arguments) {
   vongLap();
   // khai báo hàm cở bản
   hamCoBan(100, 3, 4);
-  // hàm closure
+  // hàm cộng chuỗi
   congChuoi("Trung", "Trần");
-  //hàm closure
-  var x = (var t1, var t2){
-    return t1 + t2;
+  // closure
+  var x = (var s1, var s2){
+    return s1 - s2;
   };
-  print("X = ${x(3,4)}");
-  // hàm lamda-closure
-  var y = (var t3, var t4) =>  t3 * t4;
-  print("Y = ${y(5, 4)}");
+  print("X = ${x(4,2)}");
+  // lamda-closure
+  var y = (var s3, var s4) => s3 * s4;
+  print("Y = $y{4,5}");
 }
 
 // hàm khai báo biến
@@ -31,9 +31,8 @@ void variable() {
   var a = "Tôi là người mới";
   //a = 10; // do biến var khai báo giá trị đầu tiên theo kiêu String
 
-
-  dynamic b ="Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
-
+  dynamic b =
+      "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
   b = 10;
   int c = 10;
   print("${a}");
