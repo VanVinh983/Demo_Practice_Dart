@@ -22,8 +22,6 @@ void variable() {
 
   dynamic b =
       "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi
-
-  dynamic b = "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi 
   b = 10;
   int c = 10;
   print("${a}");
