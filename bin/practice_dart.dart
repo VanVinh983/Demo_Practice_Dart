@@ -34,6 +34,7 @@ void variable() {
   list.add(6);
   print(list.toList());
 
+<<<<<<< HEAD
   const List<int> list2 = [
     0,
     1,
@@ -42,6 +43,30 @@ void variable() {
   ]; // giá trị của biến với từ khóa const là giá trị cố định. Không thể thay đổi giá trị của biến có từ khóa là const.
 }
 
+=======
+  const List<int> list2 = [0, 1, 23, 4]; // giá trị của biến với từ khóa const là giá trị cố định. Không thể thay đổi giá trị của biến có từ khóa là const.
+
+}
+
+// hàm khai báo biến
+void variable() {
+  // khai báo biến
+  var a = "Tôi là người mới";
+  //a = 10; // do biến var khai báo giá trị đầu tiên theo kiêu String
+  dynamic b = "Thôi đi ngủ đây!"; // do từ khóa dynamic nên các giá trị của biến b có thể thay đổi 
+  b = 10;
+  int c = 10;
+  print("${a}");
+  print("${b}");
+  print("${c}");
+  
+  final List<int> list = [1, 2, 3, 4, 5];
+  list.add(6);
+  print(list.toList());
+
+  const List<int> list2 = [0, 1, 23, 4]; // giá trị của biến với từ khóa const là giá trị cố định. Không thể thay đổi giá trị của biến có từ khóa là const.
+}
+>>>>>>> 6eaa97ac53020a783be37d9efc6a288b0277e610
 // khai báo 1 đối tượng
 class Student {
   String _hoVaTen;
