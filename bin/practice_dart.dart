@@ -15,6 +15,14 @@ void main(List<String> arguments) {
   hamCoBan(100, 3, 4);
   // hàm closure
   congChuoi("Trung", "Trần");
+  //hàm closure
+  var x = (var t1, var t2){
+    return t1 + t2;
+  };
+  print("X = ${x(3,4)}");
+  // hàm lamda-closure
+  var y = (var t3, var t4) =>  t3 * t4;
+  print("Y = ${y(5, 4)}");
 }
 
 // hàm khai báo biến
