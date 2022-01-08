@@ -1,4 +1,4 @@
-void main(List<String> arguments) {
+Future<void> main(List<String> arguments) async {
   print('Hello world!');
 
   Student student = new Student("Trung", "Nam", 12, "TPHCM", 28.0, 10.0);
@@ -23,6 +23,9 @@ void main(List<String> arguments) {
   // lamda-closure
   var y = (var s3, var s4) => s3 * s4;
   print("Y = $y{4,5}");
+  // Async and await
+  print('Testing Async and Await');
+  print(await testing());
 }
 
 // hàm khai báo biến
@@ -128,3 +131,13 @@ dynamic congChuoi(String s1, String s2, [String? s3]){
       print( "${name}");
     }
   }
+
+Future<String> testAsync()  =>
+   Future.delayed(const Duration(seconds: 10), () => 'Hello Homie');
+
+Future<String> testing() async{
+  var order = await testAsync();
+  return "Your order is ${order}";
+}
+
+
