@@ -7,5 +7,5 @@ void main() {
   iterator.add('Jerry');
   iterator.add('Donald');
   var list = List<String>.of(iterator, growable: true);
-  print(list);
+  print('danh sach phan tu la: $list');
 }
