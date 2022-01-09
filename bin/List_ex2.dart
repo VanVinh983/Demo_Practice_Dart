@@ -7,5 +7,5 @@ void main() {
   iterator.add('Jerry');
   iterator.add('Donald');
   var list = List<String>.of(iterator, growable: true);
-  print("List: ${list[0]}");
+  print("Danh sách: ${list}");
 }
